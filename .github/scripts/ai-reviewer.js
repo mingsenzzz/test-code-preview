@@ -2,7 +2,7 @@
  * @Author: 翟乐乐 lele.zhai@quantgroup.com
  * @Date: 2025-11-29 20:48:48
  * @LastEditors: 翟乐乐 lele.zhai@quantgroup.com
- * @LastEditTime: 2025-11-29 20:49:11
+ * @LastEditTime: 2025-11-29 21:07:19
  * @FilePath: /test-code-preview/.github/scripts/ai-preview.js
  */
 // 文件路径: .github/scripts/ai-reviewer.js
@@ -26,7 +26,7 @@ async function run() {
     // ==========================================
     const openai = new OpenAI({
       apiKey: openaiApiKey,
-      // baseURL: "https://api.deepseek.com", // <--- 如果用 DeepSeek，把这行注释解开
+      baseURL: "https://api.deepseek.com", // <--- 如果用 DeepSeek，把这行注释解开
     });
 
     const [owner, repo] = process.env.GITHUB_REPOSITORY.split("/");
